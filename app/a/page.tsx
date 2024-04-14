@@ -38,7 +38,7 @@ export default function Home() {
 
 }
 
-export function Home2() {
+function Home2() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [isPresentOpen, setPresentOpen] = useState(false);
     const [snowflakes, setSnowflakes] = useState<Snowflake[]>([]);
