@@ -120,7 +120,7 @@ function Home2() {
         resize();
         return () => window.removeEventListener('resize', resize);
     }, []);
-    const [audio] = useState(new Audio('/hbd.mp3'));
+    const [audio] = useState(new Audio('https://github.com/IzumiShaka-desu/otanjo/raw/main/public/hbd.mp3'));
     // when present is opened play music and snowflakes
     useEffect(() => {
         if (isPresentOpen) {
@@ -214,7 +214,7 @@ function Home2() {
 
                 </div>
                 <div className={isPresentOpen ? styles.banner : `${styles.banner} ${styles.out}`}>
-                    <Image width={300} height={100} src={'/happy.png'} alt={'banner'} />
+                    <Image width={300} height={100} src={'https://raw.githubusercontent.com/IzumiShaka-desu/otanjo/main/public/happy.png'} alt={'banner'} />
                 </div>
                 <div className={isPresentOpen ? styles["baloon-container"] : `${styles["baloon-container"]} ${styles["ballt"]}`}>
                     <div className={styles.balloon}>
